@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Battery Trace Support</title>
+  <meta name="description" content="Help for Battery Trace, the battery health and charging history app for iPhone, iPad and Mac.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="icon.png" type="image/png">
+  <link rel="alternate" hreflang="zh-Hans" href="zh-Hans/index.html">
+</head>
+<body>
+<main>
+  <header>
+    <img src="icon.png" alt="">
+    <div>
+      <h1>Battery Trace</h1>
+      <p>Battery health, cycle count and charging history for iPhone, iPad and Mac.</p>
+    </div>
+  </header>
+  <nav>
+    <a href="index.html">Support</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="zh-Hans/index.html">简体中文</a>
+  </nav>
+
+  <p>Questions, problems or ideas? Write to <a href="mailto:fayne.tien@gmail.com">fayne.tien@gmail.com</a>. Please include your device model and its iOS, iPadOS or macOS version.</p>
+
+  <h2>Requirements</h2>
+  <p>iPhone with iOS 17 or later (including iPhone Duo), iPad with iPadOS 17 or later, or Mac with macOS 14 or later. Battery Trace is one app for all three: buy Battery Trace Pro once and it’s unlocked on all your devices.</p>
+
+  <h2>Share a log on iPhone or iPad</h2>
+  <p>Battery level and charging are recorded whenever Battery Trace is open. Battery health, cycle count, capacity and temperature come from the Analytics log that your iPhone or iPad writes every day. Share one with Battery Trace like this:</p>
+  <section>
+    <ol>
+      <li><strong>Turn on analytics sharing.</strong> Open Settings › Privacy &amp; Security › Analytics &amp; Improvements and turn on <em>Share iPhone Analytics</em> (<em>Share iPad Analytics</em> on iPad). If it was off, the first log appears about a day later.</li>
+      <li><strong>Open the newest log.</strong> In the same place, tap <em>Analytics Data</em> and then the newest file whose name starts with <code>Analytics-</code>, for example <code>Analytics-2026-11-20-020012.ips.ca.synced</code>.</li>
+      <li><strong>Share it with Battery Trace.</strong> Tap the Share button and choose <em>Battery Trace</em>. It shows the health and cycle count it found. You can also choose <em>Save to Files</em> and then, in Battery Trace, tap <em>Import › Choose Log Files</em>.</li>
+      <li><strong>Open Battery Trace.</strong> Shared logs are added to your history the next time you open the app.</li>
+    </ol>
+  </section>
+  <p class="muted">On a Mac with a battery there is nothing to share: Battery Trace reads health, cycle count, capacity, temperature, power draw and time remaining automatically.</p>
+
+  <h2>Frequently asked questions</h2>
+
+  <h3>Why do I have to share the log myself?</h3>
+  <p>iOS and iPadOS don’t let apps read battery health, cycle count or capacity. The daily Analytics log is the only place this information is available to you, and only you can share it. Battery Trace reads the log on your device and keeps only the battery values; nothing is uploaded.</p>
+
+  <h3>There is no file starting with “Analytics-”</h3>
+  <p>Check that <em>Share iPhone Analytics</em> (or <em>Share iPad Analytics</em>) is on. After you turn it on, the first log takes about a day to appear, and then there is a new one about every day. Other files in Analytics Data don’t contain battery data. If Battery Trace says a log has no battery data, try the file from another day.</p>
+
+  <h3>How often should I share a log?</h3>
+  <p>Battery health changes slowly, so once a week is plenty for a good chart; more often gives you more detail. In <em>Import</em>, turn on <em>Remind me to import a new log</em> to get a daily or weekly reminder. You can also share older logs to fill gaps; a log that was already imported is skipped.</p>
+
+  <h3>Why is the health different from what my device shows?</h3>
+  <p>When the log contains the maximum capacity the system reports, Battery Trace shows exactly that. When it doesn’t, Battery Trace calculates an estimate from the full-charge capacity and the design capacity, and labels it as calculated. The estimate can differ by a few percent from the value in Settings. Battery Trace records and charts your battery data; it isn’t an official diagnosis and doesn’t change how your battery charges.</p>
+
+  <h3>What does Battery Trace Pro add?</h3>
+  <p>Everything above is free. Battery Trace Pro is a one-time purchase that adds:</p>
+  <ul>
+    <li><strong>iCloud sync</strong>: see the batteries of your iPhone, iPad and Mac in one place, and keep your history when you change devices.</li>
+    <li><strong>Automatic recording on iPhone and iPad</strong>: Background App Refresh records the battery level a few times a day, and Shortcuts automations record exactly when you plug in, unplug or reach a battery level.</li>
+    <li><strong>Automatic recording on Mac</strong>: a menu bar item keeps recording after you close the window, and Battery Trace can open at login.</li>
+  </ul>
+  <p>One purchase unlocks Pro on all your devices signed in with the same Apple Account. No subscription.</p>
+
+  <h3>How do I set up automatic recording with Shortcuts?</h3>
+  <p>This needs Battery Trace Pro. Battery Trace has the same guide in <em>Settings › Automatic Recording › Record with Shortcuts Automations</em>.</p>
+  <section>
+    <ol>
+      <li>Open Shortcuts, go to <em>Automation</em> and tap +.</li>
+      <li>Choose <em>Charger</em>, select <em>Is Connected</em>, and choose <em>Run Immediately</em>.</li>
+      <li>Tap <em>Next</em>, then <em>New Blank Automation</em>, and add the action <em>Record Battery Level</em> from Battery Trace.</li>
+      <li>Tap <em>Battery Level</em> in the action and change it to <em>Charger Connected</em>. Tap <em>Done</em>.</li>
+      <li>Repeat the steps with <em>Is Disconnected</em>, and set the action to <em>Charger Disconnected</em>.</li>
+      <li>Optional: add a <em>Battery Level</em> automation, for example <em>Falls Below 20%</em>, with the action left at <em>Battery Level</em>.</li>
+    </ol>
+  </section>
+
+  <h3>How do I keep recording on my Mac?</h3>
+  <p>With Battery Trace Pro, open Battery Trace › Settings and turn on <em>Show in menu bar</em> and, if you like, <em>Open at login</em>. Both are off until you turn them on. If macOS asks, allow Battery Trace in System Settings › General › Login Items.</p>
+
+  <h3>Can my family use Battery Trace Pro?</h3>
+  <p>Yes. Battery Trace Pro supports Family Sharing: if you have turned on purchase sharing in your family group, family members get Pro on their own devices at no extra cost. Each person’s battery history stays in their own iCloud.</p>
+
+  <h3>How do I restore Battery Trace Pro?</h3>
+  <p>On iPhone or iPad, open Battery Trace, tap <em>Settings</em> and then <em>Restore Purchases</em> under Battery Trace Pro. On Mac, open Battery Trace › Settings and click <em>Restore Purchases</em>. Use the Apple Account you bought Pro with, or one in the same Family Sharing group.</p>
+
+  <h3>My history isn’t syncing</h3>
+  <p>Syncing needs Battery Trace Pro, the same Apple Account signed in to iCloud on each device, and iCloud allowed for Battery Trace. Battery Trace shows the iCloud status in Settings. New data can take a few minutes to appear on your other devices, longer after a reinstall.</p>
+
+  <h3>How do I export or delete my data?</h3>
+  <p>To export, open <em>Settings › Data › Prepare CSV Export</em> and share the CSV files. Deleting Battery Trace removes its data from that device. If you use iCloud sync, also remove Battery Trace’s data in your iCloud storage settings (in Settings, tap your name, then iCloud). See the <a href="privacy.html">Privacy Policy</a>.</p>
+
+  <footer>© 2026 Fan Tian · <a href="privacy.html">Privacy Policy</a></footer>
+</main>
+</body>
+</html>

@@ -33,8 +33,8 @@
   <p>Battery level and charging are recorded whenever Battery Trace is open. Battery health, cycle count, capacity and temperature come from the Analytics log that your iPhone or iPad writes every day. Share one with Battery Trace like this:</p>
   <section>
     <ol>
-      <li><strong>Turn on analytics sharing.</strong> Open Settings › Privacy &amp; Security › Analytics &amp; Improvements and turn on <em>Share iPhone Analytics</em> (<em>Share iPad Analytics</em> on iPad). If it was off, the first log appears about a day later.</li>
-      <li><strong>Open the newest log.</strong> In the same place, tap <em>Analytics Data</em> and then the newest file whose name starts with <code>Analytics-</code>, for example <code>Analytics-2026-11-20-020012.ips.ca.synced</code>.</li>
+      <li><strong>Turn on analytics sharing.</strong> Open Settings › Privacy &amp; Security › Analytics &amp; Improvements and turn on <em>Share iPhone Analytics</em> (<em>Share iPad Analytics</em> on iPad, <em>Share iPhone &amp; Watch Analytics</em> on an iPhone paired with Apple Watch). If it was off, the first log appears about a day later.</li>
+      <li><strong>Open the newest log.</strong> In the same place, tap <em>Analytics Data</em> (on iOS 27: <em>View Analytics Logs</em>, where this device’s logs are under <em>This Device</em>) and then the newest file whose name starts with <code>Analytics-</code>, for example <code>Analytics-2026-11-20-020012.ips.ca.synced</code>.</li>
       <li><strong>Share it with Battery Trace.</strong> Tap the Share button and choose <em>Battery Trace</em>. It shows the health and cycle count it found. You can also choose <em>Save to Files</em> and then, in Battery Trace, tap <em>Import › Choose Log Files</em>.</li>
       <li><strong>Open Battery Trace.</strong> Shared logs are added to your history the next time you open the app.</li>
     </ol>
@@ -47,13 +47,14 @@
   <p>iOS and iPadOS don’t let apps read battery health, cycle count or capacity. The daily Analytics log is the only place this information is available to you, and only you can share it. Battery Trace reads the log on your device and keeps only the battery values; nothing is uploaded.</p>
 
   <h3>There is no file starting with “Analytics-”</h3>
-  <p>Check that <em>Share iPhone Analytics</em> (or <em>Share iPad Analytics</em>) is on. After you turn it on, the first log takes about a day to appear, and then there is a new one about every day. Other files in Analytics Data don’t contain battery data. If Battery Trace says a log has no battery data, try the file from another day.</p>
+  <p>Check that <em>Share iPhone Analytics</em> (or <em>Share iPad Analytics</em>) is on. After you turn it on, the first log takes about a day to appear, and then there is a new one about every day. Other files in that list don’t contain battery data. On iOS 27 the list shows only a few files per device: tap <em>Show All</em>, or tap the search button on the Analytics Logs page and type <code>Analytics-</code>. If Battery Trace says a log has no battery data, try the file from another day.</p>
 
   <h3>How often should I share a log?</h3>
   <p>Battery health changes slowly, so once a week is plenty for a good chart; more often gives you more detail. In <em>Import</em>, turn on <em>Remind me to import a new log</em> to get a daily or weekly reminder. You can also share older logs to fill gaps; a log that was already imported is skipped.</p>
 
   <h3>Why is the health different from what my device shows?</h3>
-  <p>When the log contains the maximum capacity the system reports, Battery Trace shows exactly that. When it doesn’t, Battery Trace calculates an estimate from the full-charge capacity and the design capacity, and labels it as calculated. The estimate can differ by a few percent from the value in Settings. Battery Trace records and charts your battery data; it isn’t an official diagnosis and doesn’t change how your battery charges.</p>
+  <p>When the log contains the maximum capacity the system reports, Battery Trace shows exactly that, at most 100% as Settings does. When it doesn’t, Battery Trace calculates an estimate from the full-charge capacity and the design capacity, and labels it as calculated. The estimate can differ by a few percent from the value in Settings. Tap ⓘ beside battery health or capacity in the app to see which log fields each number comes from and how it’s calculated.</p>
+  <p><strong>Not a diagnosis.</strong> These numbers come from diagnostic logs and Battery Trace’s own calculations. They can differ from the battery health the system shows, and they can’t serve as proof of a battery’s wear or condition. For battery service, repair or warranty, rely on Apple’s own diagnostics: contact Apple Support, or visit an Apple Store or an Apple Authorized Service Provider. Battery Trace records and charts your battery data and doesn’t change how your battery charges.</p>
 
   <h3>What does Battery Trace Pro add?</h3>
   <p>Everything above is free. Battery Trace Pro is a one-time purchase that adds:</p>
